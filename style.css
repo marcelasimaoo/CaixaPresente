@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  width: 90%;
+  padding: 20px;
+}
+
+#gift-box {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#gift-box img {
+  width: 150px;
+  max-width: 80%;
+  height: auto;
+}
+
+#gift-box p {
+  font-size: 1.3rem;
+  color: #c71585;
+  margin-top: 10px;
+}
+
+#carta {
+  background: #ffe4e1;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: aparecer 1s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+#carta h1 {
+  color: #db3e77;
+  margin-bottom: 15px;
+}
+
+#carta p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
